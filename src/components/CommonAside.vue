@@ -20,9 +20,7 @@
       <i :class="'el-icon-' + item.icon"></i>
       <span slot="title">{{ item.label }}</span>
     </el-menu-item>
-    <el-submenu v-for="(item, index) in hasChildren" 
-     :key="index"
-     index=''>
+    <el-submenu v-for="(item, index) in hasChildren" :key="index" index="">
       <template slot="title">
         <i :class="'el-icon-' + item.icon"></i>
         <span slot="title">{{ item.label }}</span>
@@ -32,10 +30,10 @@
         :key="subItem.path"
         :index="subIndex"
       >
-        
-        <el-menu-item @click="clickMenu(subItem)"><i :class="'el-icon-' + subItem.icon"></i>{{
-          subItem.label
-        }}</el-menu-item>
+        <el-menu-item @click="clickMenu(subItem)"
+          ><i :class="'el-icon-' + subItem.icon"></i
+          >{{ subItem.label }}</el-menu-item
+        >
       </el-menu-item-group>
     </el-submenu>
   </el-menu>
@@ -120,7 +118,7 @@ export default {
           name: item.name,
         });
       }
-      this.$store.commit('selectMenu',item)
+      this.$store.commit("selectMenu", item);
     },
   },
 };
