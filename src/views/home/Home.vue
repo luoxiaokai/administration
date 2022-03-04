@@ -46,7 +46,6 @@
           </div>
         </el-card>
       </div>
-
       <!-- 没封装前的图标做法 -->
       <!-- <el-card style="height: 280px">
         <div style="height: 280px" ref="echarts"></div>
