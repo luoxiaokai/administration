@@ -2,7 +2,6 @@
 <template>
   <div ref="echart"></div>
 </template>
-
 <script>
 import * as echart from "echarts";
 export default {
